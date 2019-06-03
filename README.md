@@ -7,4 +7,4 @@ Diretório de armazenamento: [Arquivos](http://az01.simix.com.br:81/Arquivos/)
 
 | Nome do layout |       Diretório         |               Preview             |
 |:--------------:|:-----------------------:|:---------------------------------:|
-|Loterias        | [Clique aqui](Loterias) |[Clique aqui](Loterias/preview.png)|
+|Loterias        | [Clique aqui](Loteria) |[Clique aqui](Loteria/preview.png)|
