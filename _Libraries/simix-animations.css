@@ -1,0 +1,156 @@
+/*======================= Pulse Fade ======================*/
+
+	.pulse-fade {
+		animation: pulse-fade 2.5s infinite;
+	}
+  
+	@keyframes pulse-fade {
+		0% { opacity: 1;}
+		50% { opacity: 0; }
+		100% { opacity: 1; }
+	}
+	@-webkit-keyframes pulse-fade {
+		0% { opacity: 1;}
+		50% { opacity: 0; }
+		100% { opacity: 1; }
+	}
+
+/*======================= Pulse Fade ======================*/
+
+
+
+
+/*======================== Fade Out ========================*/
+	
+	.fade-out {
+		-webkit-animation: fade-out linear .4s;
+		animation: fade-out linear .4s;
+		-webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+		-moz-animation-fill-mode: forwards; /* FF 5+ */
+		-o-animation-fill-mode: forwards; /* Not implemented yet */
+		-ms-animation-fill-mode: forwards; /* IE 10+ */
+		animation-fill-mode: forwards;
+	}
+
+	@-webkit-keyframes fade-out {
+		0% { opacity: 1; }
+		50% { opacity: .5; }
+		100% {
+			opacity: 0;
+			visibility: collapse;
+		}
+	}
+
+	@keyframes fade-out {
+		0% { opacity: 1; }
+		50% { opacity: .5; }
+		100% {
+			opacity: 0;
+			visibility: collapse;
+		}
+	}
+
+/*======================== Fade Out ========================*/
+
+
+
+
+/*======================== Fade In ========================*/
+	.fade-in {
+		-webkit-animation: fade-in linear .4s;
+		animation: fade-in linear .4s;
+		-webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+		-moz-animation-fill-mode: forwards; /* FF 5+ */
+		-o-animation-fill-mode: forwards; /* Not implemented yet */
+		-ms-animation-fill-mode: forwards; /* IE 10+ */
+		animation-fill-mode: forwards;
+	}
+
+	@-webkit-keyframes fade-in {
+		0% {
+			opacity: 0;
+			visibility: visible;
+		}
+		50% { opacity: .5; }
+		100% { opacity: 1; }
+	}
+
+	@keyframes fade-in {
+		0% {
+			opacity: 0;
+			visibility: visible;
+		}
+		50% { opacity: .5; }
+		100% { opacity: 1; }
+	}
+
+/*======================== Fade In ========================*/
+
+
+
+
+/*======================== Out Down ========================*/
+
+	.out-down {
+		-webkit-animation: out-down linear .4s;
+		animation: out-down linear .4s;
+		-webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+		-moz-animation-fill-mode: forwards; /* FF 5+ */
+		-o-animation-fill-mode: forwards; /* Not implemented yet */
+		-ms-animation-fill-mode: forwards; /* IE 10+ */
+		animation-fill-mode: forwards;
+	}
+
+	@-webkit-keyframes out-down {
+		0% { transform: translateY(0%); }
+		50% { transform: translateY(50%); }
+		100% {
+			transform: translateY(100%);
+			visibility: collapse;
+		}
+	}
+
+	@keyframes out-down {
+		0% { transform: translateY(0%); }
+		50% { transform: translateY(50%); }
+		100% {
+			transform: translateY(100%);
+			visibility: collapse;
+		}
+	}
+
+/*======================== Out Down ========================*/
+
+
+
+/*======================== In Down ========================*/
+
+	.in-down {
+		-webkit-animation: in-down linear .4s;
+		animation: in-down linear .4s;
+		-webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+		-moz-animation-fill-mode: forwards; /* FF 5+ */
+		-o-animation-fill-mode: forwards; /* Not implemented yet */
+		-ms-animation-fill-mode: forwards; /* IE 10+ */
+		animation-fill-mode: forwards;
+	}
+
+	@-webkit-keyframes in-down {
+		0% {
+			transform: translateY(-100%);
+			visibility: visible;
+		}
+		50% { transform: translateY(-50%); }
+		100% { transform: translateY(0%); }
+	}
+
+	@keyframes in-down {
+		0% {
+			transform: translateY(-100%);
+			visibility: visible;
+		}
+		50% { transform: translateY(-50%); }
+		100% { transform: translateY(0%); }
+	}
+
+/*======================== In Down ========================*/
