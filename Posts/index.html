@@ -1,0 +1,109 @@
+<!DOCTYPE html>  
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style type="text/css">
+	.post-div{
+		-webkit-box-shadow: -5px 5px 4px 4px rgba(232,235,218,1);
+		-moz-box-shadow: -5px 5px 4px 4px rgba(232,235,218,1);
+		 box-shadow: -5px 5px 4px 4px rgba(232,235,218,1);
+		 border: solid 1px rgba(232,235,218,1);
+	}
+	.face_backgroud{
+		height: 100vh;
+		background:linear-gradient(120deg, #3b5998, #FFFFFF);
+	}	
+	.name{
+		color: #7da6e8;
+	}			
+</style>
+</head>
+<body class="face_backgroud">
+	<div style="position:absolute;left:5%;right:5%;top:5%;bottom:5%;width:90%;max-height:90%;height:90%;">
+		<div style="height:100%;" class="card gedf-card">
+			<div style="height:11%;" class="card-header">
+				<div style="height:100%;width:100%;"class="d-flex justify-content-between align-items-center">
+					<div class="d-flex justify-content-between align-items-center">
+						<div class="mr-2">
+							<img class="rounded-circle" width="45" height="45" src="{{User.PerfilPicture}}">
+						</div>
+						<div class="ml-2">
+							<div class="h5 m-0 name">{{UserName}}</div>
+							<div class="h8 text-muted">{{UserAlias}}</div>
+						</div>
+					</div>                       
+				</div>
+			</div>
+			<div style="height:89%;padding:0.50rem" class="card-body">
+				<div style="height:5%;" class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>{{IntervalPost}}</div>
+				<div style="padding:0.50rem;height:95%;overflow:hidden;">
+					<div id="user_div_text" style="overflow:hidden;margin-bottom:1%;max-height:9%;">
+						<p id="user_text" style="white-space: pre-line;" class="card-text">{{Text}}</p>
+					</div>
+					<div id="post_div" class="post-div" style="padding:0.50rem;width:95%;height:90%;">
+						<div style="overflow:hidden;margin-bottom:2%;max-height:8%;">
+							<b><p id="title" class="card-text name">{{Title}}</p></b>
+						</div>
+						<div id="att_div" style="background-color:c9ddff;overflow:hidden; max-height:90%;">
+							<div id="text" style="float:left;width:auto;max-width:48%;margin:1%;">				
+								<p id="message" style="white-space: pre-line;"class="card-text">{{Att1.Message}}</p>
+							</div>
+							<img src="{{Att1.ImageSrc}}" id="att_image" class="image" style="display:block;float:right;width:auto;max-width:48%;height:auto;max-height:48%;margin:1%;">
+							</img>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var postImageDeleted = false;
+		var messageDeleted = false;
+		var titleDeleted = false;
+		$(document).ready(function(){
+			$(".card-text").each(function(){
+				this.innerHTML = this.innerHTML.replace(/\\n/g,"<br />");
+			});
+			
+			if(user_text.innerHTML.trim() == ''){
+				user_text.remove();
+				$("#post_div").css("height","96%");				
+			}
+			
+			if(title.innerHTML.trim() == ''){
+				title.remove();
+			    titleDeleted = true;
+				$("#att_div").css("height","96%");				
+			}
+			
+			if(message.innerHTML.trim() == ''){
+				message.remove();
+			    messageDeleted = true;
+				$("#att_div").css("height", "90%");
+				$("#att_image").css("max-height","90%");
+				$("#att_image").css("max-width","90%");
+				$("#att_image").css("float","left");									
+			}
+			
+			if(postImageDeleted && titleDeleted && messageDeleted){
+				post_div.remove();
+				$("#user_div_text").css("max-height","9%");
+			}
+			
+			
+		});
+	
+		$("img").on("error",function(){
+			console.log("image não encontrada " + $(this).src);			
+			if(this.id == "att_image"){
+				postImageDeleted = true;
+				$("#text").css("max-height", "90%");
+				$("#text").css("font-size","30px");				
+			}
+			$(this).remove();
+		});	
+	</script>
+	<!--V1.02-->
+</body>
+</html>
