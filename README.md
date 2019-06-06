@@ -1,6 +1,6 @@
 # SuperMídia Widgets
 
-Os widgets são arquivos containers (HTML, CSS, JS) que proporcionam diversos novos layouts e funcionalidades para a SuperMídia.
+Os widgets são arquivos containers (HTML, CSS, JS) que proporcionam diversos novos layouts e funcionalidades para a [SuperMídia](https://www.simix.com.br/solucoes/super-midia).
 
 Nomeclatura: `{Nome}_V1.0.smxwid`  
 Diretório de armazenamento: [Arquivos](http://az01.simix.com.br:81/Arquivos/) (Pasta SuperMidia\Widgets)
