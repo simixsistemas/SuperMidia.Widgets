@@ -16,7 +16,7 @@ Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.v
 | Nome                     | Download                                                                                          | Id  |Preview                                 |
 |:------------------------:|:-------------------------------------------------------------------------------------------------:|:---:|:--------------------------------------:|
 |[Loterias](Loteria)       | [v1.5](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Loterias_V1.5.smxwid)     | ?   |![Screenshot](Loteria/preview.png)      |
-|[Redes sociais](Posts)    | [v1.10](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Post_V1.10.smxwid)       | ?   |![Screenshot](Posts/preview.png)        |
+|[Redes sociais](Posts)    | [v1.10](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Post_V1.11.smxwid)       | ?   |![Screenshot](Posts/preview.png)        |
 
 ## Referências
 - [Outros conteúdos SuperMídia](http://inst.supermidiadigital.com.br/site/conteudos/)
