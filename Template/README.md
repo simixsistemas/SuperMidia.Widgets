@@ -41,7 +41,7 @@
 |Sublime				   | [Link](https://www.sublimetext.com)									       |
 
 > **Dica!** O template possui uma configuração padrão para ajudar a rodar a página web e ficar recarregando, automaticamente, a cada alteração.
-para isso, se faz necessário instalar o [Node.js](https://nodejs.org/en/). Basta acessar o site e baixar a ultima versão disponível.
+Por isso, se faz necessário instalar o [Node.js](https://nodejs.org/en/), basta acessar o site e baixar a ultima versão disponível.
 
 - Baixe o projeto [SuperMidia.Widgets](https://github.com/simixsistemas/SuperMidia.Widgets)
 <p align="center">
