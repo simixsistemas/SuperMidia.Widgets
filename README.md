@@ -9,7 +9,7 @@ Diretório de armazenamento: [Arquivos](http://az01.simix.com.br:81/Arquivos/) (
 
 [Animações CSS](_Libraries/ANIMATIONS.md)
 
-## Layouts disponíveis
+## Widgets disponíveis
 
 Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.visualstudio.com/).
 
@@ -17,6 +17,10 @@ Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.v
 |:------------------------:|:-------------------------------------------------------------------------------------------------:|:---:|:--------------------------------------:|
 |[Loterias](Loteria)       | [v1.5](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Loterias_V1.5.smxwid)     | ?   |![Screenshot](Loteria/preview.png)      |
 |[Redes sociais](Posts)    | [v1.10](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Post_V1.11.smxwid)       | ?   |![Screenshot](Posts/preview.png)        |
+
+## Limitações
+- Atualmente só rodam no layout do centro (não das laterais, nem do rodapé)
+- Evite utilizar muitas animações, pois em conjunto com outros conteúdos pode haver lag
 
 ## Referências
 - [Outros conteúdos SuperMídia](http://inst.supermidiadigital.com.br/site/conteudos/)
