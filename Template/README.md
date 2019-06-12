@@ -1,4 +1,36 @@
-﻿## Primeiros passos
+﻿## Entidades disponíveis
+
+# Post (Rede social)
+- Title
+- Text
+- Message
+- Image
+- Attachments (Coleção de anexos, podendo ser Imagem, Vídeo, Localização...)
+
+# Message (TBR)
+- Title
+- Text
+- Image
+
+# Item (TBR)
+- Title
+- Text
+- Image
+- Price
+
+## Objetos disponíveis
+- Model
+- View
+- Utils
+
+## Utilização das propriedades no HTML
+- Pela sintaxe {{NomePropriedade}}
+- Através do objeto Model por JS
+
+## Formatação do conteúdo (TBR)
+- {{Propriedade:Formato}}
+
+## Primeiros passos
 
 - Utilize um editor apropriado para alterar o widget, recomendamos os seguintes editores:
 
@@ -79,34 +111,3 @@ para isso, se faz necessário instalar o [Node.js](https://nodejs.org/en/). Bast
 - Caso use ferramentas externas como `Jquery` baixe o arquivo `.js` e referencie localmente no layout, assim ele continuará a funcionar mesmo offline;
 - Utilize ao máximo o poder das variáveis, ao invés de funções js para informações do modelo, elas são carregadas antes de o layout ser exibido na tela, assim nenhum delay será percebido na transição dos layouts;
 - Use estilizações por classes, estilos escritos diretamente nos elementos `HTML` são mais dificeis de dar manutenção no futuro;
-## Entidades disponíveis
-
-# Post (Rede social)
-- Title
-- Text
-- Message
-- Image
-- Attachments (Coleção de anexos, podendo ser Imagem, Vídeo, Localização...)
-
-# Message (TBR)
-- Title
-- Text
-- Image
-
-# Item (TBR)
-- Title
-- Text
-- Image
-- Price
-
-## Objetos disponíveis
-- Model
-- View
-- Utils
-
-## Utilização das propriedades no HTML
-- Pela sintaxe {{NomePropriedade}}
-- Através do objeto Model por JS
-
-## Formatação do conteúdo (TBR)
-- {{Propriedade:Formato}}
