@@ -21,6 +21,7 @@ Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.v
 ## Limitações
 - Atualmente só rodam no layout do centro (não das laterais, nem do rodapé)
 - Evite utilizar muitas animações, pois em conjunto com outros conteúdos pode haver lag
+- Evite utilizar muitos scripts, pois pode haver lag em alguns dispositivos
 
 ## Referências
 - [Outros conteúdos SuperMídia](http://inst.supermidiadigital.com.br/site/conteudos/)
