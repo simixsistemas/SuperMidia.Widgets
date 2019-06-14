@@ -1,0 +1,14 @@
+{
+  "name": "loterias",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm run open",
+    "open": "concurrently && lite-server"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^2.2.0",
+    "http-server": "^0.11.1",
+    "lite-server": "^2.2.2"
+  }
+}
