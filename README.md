@@ -15,7 +15,7 @@ Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.v
 
 | Nome                     | Download                                                                                          | Id  |Preview                                 |
 |:------------------------:|:-------------------------------------------------------------------------------------------------:|:---:|:--------------------------------------:|
-|[Loterias](Loteria)       | [v1.5](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/MegaSena_V1.6.smxwid)     | ?   |![Screenshot](Loteria/MegaSena/preview.png)      |
+|[Loterias](Loteria)       | [v1.6](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/MegaSena_V1.6.smxwid)     | ?   |![Screenshot](Loteria/MegaSena/preview.png)      |
 |[Redes sociais](Posts)    | [v1.10](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Post_V1.11.smxwid)       | ?   |![Screenshot](Posts/preview.png)        |
 
 ## Limitações
