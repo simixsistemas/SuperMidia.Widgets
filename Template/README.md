@@ -1,18 +1,18 @@
-﻿## Entidades disponíveis
+## Entidades disponíveis
 
-# Post (Rede social)
+### Post (Rede social)
 - Title
 - Text
 - Message
 - Image
 - Attachments (Coleção de anexos, podendo ser Imagem, Vídeo, Localização...)
 
-# Message (TBR)
+### Message (TBR)
 - Title
 - Text
 - Image
 
-# Item (TBR)
+### Item (TBR)
 - Title
 - Text
 - Image
@@ -21,23 +21,23 @@
 ## Objetos disponíveis
 - Model
 - View
-- Utils
+- Utils (TBR)
 
 ## Utilização das propriedades no HTML
-- Pela sintaxe {{NomePropriedade}}
+- Pela sintaxe {{Propriedade}}
 - Através do objeto Model por JS
 
 ## Formatação do conteúdo (TBR)
 - {{Propriedade:Formato}}
-
-## Primeiros passos
+  
+# Primeiros passos
 
 - Utilize um editor apropriado para alterar o widget, recomendamos os seguintes editores:
 
 | Nome                     | Download                                                                      |
 |:------------------------:|:-----------------------------------------------------------------------------:|
 |Visual Studio Code        | [Link](https://code.visualstudio.com/)										   |
-|Notepad ++                | [Link](https://notepad-plus-plus.org/download/v7.7.html)					   |
+|Notepad ++                | [Link](https://notepad-plus-plus.org/download/)					   |
 |Sublime				   | [Link](https://www.sublimetext.com)									       |
 
 > **Dica!** O template possui uma configuração padrão para ajudar a rodar a página web e ficar recarregando, automaticamente, a cada alteração.
