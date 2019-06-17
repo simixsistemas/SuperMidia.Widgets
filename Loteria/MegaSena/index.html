@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loterias - Caixa</title>
+    <meta charset="UTF-8">
+    <meta content="Loterias - Caixa" property="og:title">
+    <meta name="author" content="Felipe Baltazar">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./scripts/jquery.min.js"></script>
+    <script src="./scripts/helpers.js"></script>
+</head>
+
+<body>
+    <div id="resultados" class="ng-scope results-container">
+        <div class="title-container">
+            <h1>Mega-Sena</h1>
+        </div>
+        <div class="fill-parent" id="conteudoresultado">
+            <div class="content-section section-text with-box no-margin-bottom result-head">
+                <div class="title-bar clearfix">
+                    <div class="nav-anchor">Resultados</div>
+                    <h2>
+                        Resultado <span id="idDate" class="ng-binding"></span>
+                    </h2>
+                </div>
+            </div>
+            <div class="with-box column-left no-margin-top fill-width center-childs">
+                <div class="content">
+                    <div class="resultado-loteria">
+
+                        <h2 id="hasNext" class="epsilon" style="font-size: 2.8rem;" ></h2>
+                        <ul style="color:lightgrey" class="numbers megasena" id="ulDezenas"></ul>
+
+                        <div class="next-prize clearfix">
+                            <p id="suggNextDate" style="color:lightgrey;width: 50%; max-width: 50% !important; font-size: 1.6vw;" class="ng-binding"></p>
+                            <p id='suggNextValue' style="color:lightgrey;width: 50%;font-size: 2.6vw;" class="value ng-binding"></p>
+
+                        </div>
+
+                        <div class="totals">
+                            <p class="">
+                                <span style="color:lightgrey">Acumulado próximo concurso</span>
+                                <span id="nextValue" style="color:lightgrey" class="value ng-binding"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="loader" class="in-vertical">
+        <div class="loader-title-container">
+            <h1 class="pulse" style="color:white;font-size: calc(5vw + 4vh)">Mega-Sena</h1>
+        </div>
+        <div style="width:50%;" class="fill-height center-childs">
+            <img src="img/home-com-sorte.png" class="img-responsive ng-scope fill-width" alt="com sorte" />
+        </div>
+    </div>
+    <img src="" onerror="startAjax()" />
+</body>
+
+</html>
