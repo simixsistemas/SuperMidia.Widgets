@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Quotes Widget</title>
+	<meta charset="UTF-8">
+	<meta content="Quotes" property="og:title">
+	<meta name="author" content="Markus Viezzer">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="simix-animations.css" />
+	<script src="jquery.min.js"></script>
+	<script src="textFit.js"></script>
+</head>
+
+<body>
+	<div class="context">
+		<div id="quote"></div>
+		<div id="author"></div>
+	</div>
+	
+	<div class="area" >
+		<ul class="circles">
+			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+		</ul>
+	</div >
+	
+	<script>
+		$.ajax({
+			url: "https://pt.wikiquote.org/w/api.php",
+			type: 'GET',
+			dataType: "jsonp",
+			data: {
+				format: "json",
+				action: "parse",
+				text: "{{Wikiquote:Frase_do_dia}}",
+				format: "json",
+			},
+     })
+     .done(function(data, message) {
+		var html = data.parse.text['*'];
+		var $quoteBox = $(html).find('div').find('table');
+		var $quote = $quoteBox.find('b');
+		var $author = $quoteBox.find("a").contents().first().text();
+		
+		$('#quote').html($quote);
+		$('#author').html($author);
+		
+		var width = window.innerWidth - 100;
+		var height1 = window.innerHeight - 300;
+		var height2 = 200;
+		
+		$('#quote').attr("style", "width:" + width + "px;height:" + height1 + "px");
+		$('#author').attr("style", "width:" + width + "px;height:" + height2 + "px");
+		
+		textFit($('#quote'), { alignVert: true,
+			alignHoriz: true,
+			multiLine: true,
+			detectMultiLine: true,
+			minFontSize: 20,
+			maxFontSize: 500,
+			reProcess: true, 
+			widthOnly: false, 
+			alignVertWithFlexbox: false
+		});
+
+		textFit($('#author'), { alignVert: true, alignHoriz: true });
+     })
+     .fail(function(jqXHR, textStatus, msg){
+          console.log(msg);
+     }); 
+	</script>
+
+</body>
+</html>
