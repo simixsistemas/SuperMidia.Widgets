@@ -14,11 +14,11 @@ Diretório de armazenamento: [Arquivos](http://az01.simix.com.br:81/Arquivos/) (
 
 Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.visualstudio.com/).
 
-| Nome                     | Download                                                                                         | Preview                                |
-|:------------------------:|:------------------------------------------------------------------------------------------------:|:--------------------------------------:|
-|[Loterias](Loteria)       | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Loterias_V1.0.smxwid)    |![Screenshot](Loteria/preview.png)      |
-|[Redes sociais](Posts)    | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Post_V1.0.smxwid)        |![Screenshot](Posts/preview.png)        |
-|[Frase do dia](Quotes)    | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Quotes_V1.0.smxwid)      |![Screenshot](Quotes/preview.png)       |
+| Nome                     | Download                                                                                         | Preview                                         |
+|:------------------------:|:------------------------------------------------------------------------------------------------:|:-----------------------------------------------:|
+|[Loterias](Loteria)       | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Loterias_V1.0.smxwid)    |![Screenshot](Loteria/MegaSena/preview.png)      |
+|[Redes sociais](Posts)    | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Post_V1.0.smxwid)        |![Screenshot](Posts/preview.png)                 |
+|[Frase do dia](Quotes)    | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Quotes_V1.0.smxwid)      |![Screenshot](Quotes/preview.png)                |
 
 ## Limitações
 - Atualmente só rodam no layout do centro (não das laterais, nem do rodapé)
