@@ -8,6 +8,7 @@ Diretório de armazenamento: [Arquivos](http://az01.simix.com.br:81/Arquivos/) (
 ## Bibliotecas
 
 [Animações CSS](_Libraries/ANIMATIONS.md)
+
 [Autofit JS](_Libraries/simix-autofit.js)
 
 ## Widgets disponíveis
