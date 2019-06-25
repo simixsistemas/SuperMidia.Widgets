@@ -11,7 +11,8 @@ Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.v
 
 | Nome                     | Download                                                                                         | Preview                                         |
 |:------------------------:|:------------------------------------------------------------------------------------------------:|:-----------------------------------------------:|
-|[Loterias](Loteria)       | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Loterias_V1.0.smxwid)    |![Screenshot](Loteria/MegaSena/preview.png)      |
+|[Mega-Sena](MegaSena)     | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/MegaSena_V1.0.smxwid)    |![Screenshot](Loteria/MegaSena/preview.png)      |
+|[Lotof�cil](LotoFacil)   | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Lotofacil_V1.0.smxwid)   |![Screenshot](Loteria/LotoFacil/preview.png)     |
 |[Redes sociais](Posts)    | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Post_V1.0.smxwid)        |![Screenshot](Posts/preview.png)                 |
 |[Frase do dia](Quotes)    | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Quotes_V1.0.smxwid)      |![Screenshot](Quotes/preview.png)                |
 
