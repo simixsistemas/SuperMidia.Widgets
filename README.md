@@ -19,6 +19,7 @@ Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.v
 ## Bibliotecas
 
 [Animações CSS](_Libraries/ANIMATIONS.md)  
+[Helpers Js](_Libraries/HELPERS.md)
 [Autofit JS](_Libraries/simix-autofit.js)
 
 ## Limitações
