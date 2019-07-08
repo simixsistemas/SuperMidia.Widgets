@@ -102,7 +102,7 @@ Por isso, se faz necessário instalar o [Node.js](https://nodejs.org/en/), basta
 ### Para atualização em tempo real da página
 
 **Existem dois métodos prontos para serem utilizados para atualizar, a página html, em tempo real.**
-**Escolha abaixo à opção que lhe atrai:**
+**Escolha abaixo a opção que lhe atrai:**
 
 <details>
     <summary>
