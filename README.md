@@ -20,7 +20,7 @@ Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.v
 ## Bibliotecas
 
 [Animações CSS](_Libraries/ANIMATIONS.md)  
-[Helpers Js](_Libraries/HELPERS.md)
+[Helpers Js](_Libraries/HELPERS.md)  
 [Autofit JS](_Libraries/simix-autofit.js)
 
 ## Limitações
@@ -71,7 +71,7 @@ Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.v
 | Nome                     | Download                                                                      |
 |:------------------------:|:-----------------------------------------------------------------------------:|
 |Visual Studio Code        | [Link](https://code.visualstudio.com/)										   |
-|Notepad ++                | [Link](https://notepad-plus-plus.org/download/)					   |
+|Notepad ++                | [Link](https://notepad-plus-plus.org/download/)					   		   |
 |Sublime				   | [Link](https://www.sublimetext.com)									       |
 
 > **Dica!** O template possui uma configuração padrão para ajudar a rodar a página web e ficar recarregando, automaticamente, a cada alteração.
@@ -97,6 +97,41 @@ Por isso, se faz necessário instalar o [Node.js](https://nodejs.org/en/), basta
 		<img src="https://user-images.githubusercontent.com/42358163/59373918-0cd16f00-8d21-11e9-9921-9b1be3352dca.png" alt="image" style="max-width:100%;"/>
 	</kbd>
 </p>
+
+
+### Para atualização em tempo real da página
+
+**Existem dois métodos prontos para serem utilizados para atualizar, a página html, em tempo real.**
+**Escolha abaixo à opção que lhe atrai:**
+
+<details>
+    <summary>
+        <b>Instalação extenção visual studio code (uma vez só)</b>
+    </summary>
+
+- Abra o diretorio do seu layout pelo visual studio code e instale a extensão **Live Server**.
+
+<p align="center">
+	<kbd>
+		<img src="https://user-images.githubusercontent.com/42358163/60831747-a826fa00-a190-11e9-85e3-947f68da1825.gif" alt="image" style="max-width:100%;"/>
+	</kbd>
+</p>
+
+- Basta executar o **Live Server** (botão "Go Live") para a página html ficar atualizando automáticamente a cada salvamento.
+
+<p align="center">
+	<kbd>
+		<img src="https://user-images.githubusercontent.com/42358163/60831748-a8bf9080-a190-11e9-8791-f7e127849ed3.gif" alt="image" style="max-width:100%;"/>
+	</kbd>
+</p>
+
+</details>
+
+
+<details>
+    <summary>
+        <b>Instalação por projeto (método de instalação para cada projeto)</b>
+    </summary>
 
 - Entre na pasta do seu novo layout e selecione a barra de navegação
 <p align="center">
@@ -136,6 +171,9 @@ Por isso, se faz necessário instalar o [Node.js](https://nodejs.org/en/), basta
 		<img src="https://user-images.githubusercontent.com/42358163/59374859-35f2ff00-8d23-11e9-8aa7-31939fa81cd3.gif" alt="image" style="max-width:100%;"/>
 	</kbd>
 </p>
+
+</details>
+
 
 > **Dica!** Utilize o comando `Ctrl + S` após fazer as alterações, assim você as percebera imediatamente na tela.
 
