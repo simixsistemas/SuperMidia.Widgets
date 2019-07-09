@@ -106,10 +106,10 @@ Por isso, se faz necessário instalar o [Node.js](https://nodejs.org/en/), basta
 
 <details>
     <summary>
-        <b>Instalação extenção visual studio code (uma vez só)</b>
+        <b>Instalação extensão Visual Studio Code (uma vez só)</b>
     </summary>
 
-- Abra o diretorio do seu layout pelo visual studio code e instale a extensão **Live Server**.
+- Abra o diretório do seu layout pelo Visual Studio Code e instale a extensão **Live Server**.
 
 <p align="center">
 	<kbd>
@@ -117,7 +117,7 @@ Por isso, se faz necessário instalar o [Node.js](https://nodejs.org/en/), basta
 	</kbd>
 </p>
 
-- Basta executar o **Live Server** (botão "Go Live") para a página html ficar atualizando automáticamente a cada salvamento.
+- Basta executar o **Live Server** (botão "Go Live") para a página html ficar atualizando automaticamente a cada salvamento.
 
 <p align="center">
 	<kbd>

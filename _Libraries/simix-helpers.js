@@ -12,27 +12,27 @@ function () {
     return this.toString().replace(/\{(.+?)\}/g, (match) => {
         var key = match.replace('{','').replace('}', '');
         var keyFormat = '';
-        if(match.indexOf(':') > -1) {
+        if (match.indexOf(':') > -1) {
             var formatParameters = key.split(':');
             key = formatParameters[0];
             keyFormat = formatParameters[1];
-            if(formatParameters.length > 2) {
+            if (formatParameters.length > 2) {
                 keyFormat = formatParameters.slice(1).join(':');
             }
         }
     
-        if(typeof args[key] === 'undefined') return match;
+        if (typeof args[key] === 'undefined') return match;
     
         var returnValue = args[key];
-        if(!isNullOrEmpty(keyFormat)) {
+        if (!isNullOrEmpty(keyFormat)) {
             var str = new String(returnValue);
-            if(keyFormat.startsWith('n')) {
+            if (keyFormat.startsWith('n')) {
                 str = str.replace('.', ',');
                 str = formatDecimals(str, keyFormat);
             } else if (!isNaN(keyFormat)) {
                 str = str.replace('.', ',');
                 str = formatDigits(str, keyFormat);
-            } else if(isHourFormat(args[key], keyFormat)) {
+            } else if (isHourFormat(args[key], keyFormat)) {
                 str = formatDateTime(args[key], keyFormat);
             }
     
@@ -75,7 +75,7 @@ function formatDateTime(today, keyFormat){
 }
 
 function formatDecimals(str, keyFormat) {
-    if(str.indexOf(',') < 0) {
+    if (str.indexOf(',') < 0) {
         str += ',';
     }
 
@@ -118,33 +118,25 @@ function isHourFormat(object, keyFormat) {
 }
 
 function convertDay(dayNumber){
-    var result = 'Domingo';
-
     switch(dayNumber){
         case 0:
-            result = 'Domingo';
-            break;
+        case 7:
+            return 'Domingo';
         case 1:
-            result = 'Segunda';
-            break;
+            return 'Segunda';
         case 2:
-            result = 'Terça';
-            break;
+            return'Terça';
         case 3:
-            result = 'Quarta';
-            break;
+            return 'Quarta';
         case 4:
-            result = 'Quinta';
-            break;
+            return 'Quinta';
         case 5:
-            result = 'Sexta';
-            break;
+            return 'Sexta';
         case 6:
-            result = 'Sabado';
-            break;
+            return 'Sábado';
     }
 
-    return result;
+    return undefined;
 }
 
 function isNullOrEmpty(variable) {
