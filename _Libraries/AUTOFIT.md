@@ -1,7 +1,7 @@
 # Inicio
 - Baixe o arquivo `simix-autofit.js` clicando [aqui](simix-autofit.js)
 
-- Adicione a referencia para a biblioteca `simix-autofit`
+- Adicione a referência para a biblioteca `simix-autofit`
 
 > No exemplo abaixo o arquivo `simix-autofit.js` está na mesma pasta que a página `html`
 
@@ -39,7 +39,7 @@
 	</div>
 ```
 
-> É importante ter definido o tamanho do elemento para funcionar o calculo da fonte (tambem funciona com `auto` quando definidas as propriedades `top`, `bottom`, `left` e `rigth`)
+> É importante ter definido o tamanho do elemento para funcionar o cálculo da fonte (tambem funciona com `auto` quando definidas as propriedades `top`, `bottom`, `left` e `rigth`)
 
 ## Outras propriedades
 
@@ -84,7 +84,7 @@
 ```
 
 
-- Apenas largura | Define se o calculo da fonte será executado se baseando apenas na largura (valor padrão é `false`)
+- Apenas largura | Define se o cálculo da fonte será executado se baseando apenas na largura (valor padrão é `false`)
 
 ``` Html
 	<div fit-widthOnly="true" fit-text="true" style="width:50%;height:100%">
@@ -92,7 +92,7 @@
 	</div>
 ```
 
-- Detectar multiplas linhas | Define se o calculo da fonte deverá detectar multiplas linhas automáticamente (valor padrão `true`)
+- Detectar multiplas linhas | Define se o cálculo da fonte deverá detectar multiplas linhas automaticamente (valor padrão `true`)
 
 ``` Html
 	<div fit-detect-multi-line="false" fit-text="true" style="width:50%;height:100%">
@@ -100,7 +100,7 @@
 	</div>
 ```
 
-- Reprocessar | Define se o calculo da fonte deverá reprocessar quando ouver modificações (valor padrão é `true`)
+- Reprocessar | Define se o cálculo da fonte deverá reprocessar quando ouver modificações (valor padrão é `true`)
 
 ``` Html
 	<div fit-reProcess="false" fit-text="true" style="width:50%;height:100%">
