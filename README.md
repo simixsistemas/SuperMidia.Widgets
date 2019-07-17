@@ -21,7 +21,7 @@ Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.v
 
 [Animações CSS](_Libraries/ANIMATIONS.md)  
 [Helpers Js](_Libraries/HELPERS.md)  
-[Autofit JS](_Libraries/simix-autofit.js)
+[Autofit JS](_Libraries/AUTOFIT.md)
 
 ## Limitações
 - Atualmente só rodam no layout do centro (não das laterais, nem do rodapé)
