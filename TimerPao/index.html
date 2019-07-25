@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>SuperMídia Widget</title>
-	<meta charset="UTF-8">
-	<meta content="SuperMídia Widget" property="og:title">
-	<meta name="author" content="Patrícia Conceição">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <link rel="stylesheet" href="styles.css" />
-<script type="application/javascript">	
-    var second = 59;
-    var minute = 14;
+    <head>
+        <title>SuperMídia Widget</title>
+        <meta charset="UTF-8">
+        <meta content="SuperMídia Widget" property="og:title">
+        <meta name="author" content="Patrícia Conceição">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <link rel="stylesheet" href="styles.css" />
+        <script type="application/javascript">	
+            var second = 59;
+            var minute = 14;
 
-    function checkTwoDigits(i) {
-        if (i<10 && !(new String(i).startsWith("0"))) {
-            i="0" + i;
-        }
-        return i;
-    }	
+            function checkTwoDigits(i) {
+                if (i < 10 && !(new String(i).startsWith("0"))) {
+                    i="0" + i;
+                }
+                return i;
+            }	
 
-    function cronometro() {
-        second= checkTwoDigits(second);
-        minute= checkTwoDigits(minute);        
-    }	
+            function cronometro() {
+                second= checkTwoDigits(second);
+                minute= checkTwoDigits(minute);        
+            }	
 
-    cronometro (); 
-    window.onload = function(Tempo){      
+            cronometro ();
+            window.onload = function(Tempo) {      
+                var audio = document.getElementById("audio");
+                var timer = setInterval(function(Tempo){
+                    const element = document.getElementById("item-grid-h1");
+                    element.innerHTML = "Pão quentinho <br> em... <br> <span class='item-grid-timer'>" + minute + ":" + second + "</span>";
+                    second--;
 
-    var audio = document.getElementById("audio");
+                    if(second == 00) {
+                        minute--;
+                        second = 59;
+                    }
 
-    var timer = setInterval(function(Tempo){   
-    const element = document.getElementById("item-grid-h1");
-    element.innerHTML = "Pão quentinho <br> em... <br> <span class='item-grid-timer'>" + minute + ":" + second + "</span>";
+                    cronometro ();
 
-    second--;  
-    cronometro (); 
-
-    if(second == 00){
-        minute--;
-        second = 59;
-    }    
-
-    if(minute <= -1) {
-        element.innerHTML = "Pão quentinho <br> agora!";	        
-        audio.play();
-        clearInterval(timer);
-    }
-    }, 1000);
-    }
-</script>
-<body style="width:100%;height:100vh !important;display: flex; justify-content: center; align-items: center; overflow: hidden;">   
-    <div id="clsInf">
-        <h1 id = "item-grid-h1" align="center">Pão quentinho <br>em...</h1>
-    </div> 
-    <div id="clsImg">
-        <img id = "imgPrincipal" src="imgPrincipal.gif">            
-    </div>
-    <audio id="audio">
-        <source src="sirene.mp3" type="audio/mp3">
-    </audio>
-</body>
+                    if(minute <= 0 && second <= 0) {
+                        element.innerHTML = "Pão quentinho <br> agora!";	        
+                        audio.play();
+                        clearInterval(timer);
+                    }
+                }, 1000);
+            }
+        </script>
+    <body style="width:100%;height:100vh !important;display: flex; justify-content: center; align-items: center; overflow: hidden;">
+        <div id="clsInf">
+            <h1 id = "item-grid-h1" align="center">Pão quentinho <br>em...</h1>
+        </div>
+        <div id="clsImg">
+            <img id = "imgPrincipal" src="imgPrincipal.gif">
+        </div>
+        <audio id="audio">
+            <source src="paoquentinho.mp3" type="audio/mp3">
+        </audio>
+    </body>
 </html>
