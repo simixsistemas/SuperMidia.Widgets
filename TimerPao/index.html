@@ -9,11 +9,11 @@
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
         <link rel="stylesheet" href="styles.css" />
         <script type="application/javascript">	
-            var second = 59;
-            var minute = 14;
+            var second = 0;
+            var minute = 2;
 
             function checkTwoDigits(i) {
-                if (i < 10 && !(new String(i).startsWith("0"))) {
+                if (i < 10 && new String(i).length < 2) {
                     i="0" + i;
                 }
                 return i;
@@ -25,19 +25,19 @@
             }	
 
             cronometro ();
-            window.onload = function(Tempo) {      
-                var audio = document.getElementById("audio");
-                var timer = setInterval(function(Tempo){
+            window.onload = function() {      
+                const audio = document.getElementById("audio");
+                var timer = setInterval(function(){
+                    cronometro ();
                     const element = document.getElementById("item-grid-h1");
-                    element.innerHTML = "Pão quentinho <br> em... <br> <span class='item-grid-timer'>" + minute + ":" + second + "</span>";
-                    second--;
+                    element.innerHTML = `Pão quentinho <br> em... <br> <span class='item-grid-timer'>${minute}:${second}</span>`;
 
-                    if(second == 00) {
+                    if(second == 0 && minute > 0) {
                         minute--;
                         second = 59;
+                    } else  {
+                        second--;
                     }
-
-                    cronometro ();
 
                     if(minute <= 0 && second <= 0) {
                         element.innerHTML = "Pão quentinho <br> agora!";	        
