@@ -12506,7 +12506,7 @@ body.sociais .search-input {
 }
 
     .resultado-loteria > .numbers > li {
-        margin: 0 1px 0 0;
+        margin: 0 35px 0 0;
         font-family: "FuturaWeb",sans-serif;
         font-size: 4vw;
         color: #fff;
@@ -15523,6 +15523,11 @@ body {
     height: 100% !important;
 }
 
+.fill-screen {
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
 .result-head {
     width: 100%;
     display: flex;
@@ -15547,6 +15552,7 @@ body {
 #loader {
     position: fixed;
     z-index: 10000;
+    top: 0px;
     background-size: cover;
     background-image: url(../img/bg_destaqueInternas.jpg);
     width: 100vw;
@@ -15569,4 +15575,12 @@ body {
     display: grid;
     grid-row-gap: 0px;
     grid-template-rows: 20% 65%;
+}
+
+.loto-logo {
+    background-image: url(../img/megasena.png);
+    background-size: 35vw;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
 }

@@ -12,7 +12,7 @@
 function startAjax() {
     var start = new Date().getTime();
     $.ajax({
-        url: "https://www.lotodicas.com.br/api/quina",
+        url: "https://www.lotodicas.com.br/api/dupla-sena",
         type: 'GET',
         cache: false,
         dataType: "json",

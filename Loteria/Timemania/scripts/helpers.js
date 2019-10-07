@@ -12,7 +12,7 @@
 function startAjax() {
     var start = new Date().getTime();
     $.ajax({
-        url: "https://www.lotodicas.com.br/api/quina",
+        url: "https://www.lotodicas.com.br/api/timemania",
         type: 'GET',
         cache: false,
         dataType: "json",
@@ -40,6 +40,8 @@ function startAjax() {
         idDateEl.innerText = "Concurso " + data.numero + " (" + splitedDate[2] + "/" + splitedDate[1] + "/" + splitedDate[0] + ")";
         hasNextEl.innerText = data.acumulado === "sim" ? "Acumulou!" : "";
         suggNextDateEl.innerText = "Estimativa de prêmio do próximo concurso " + splitedNextDate[2] + "/" + splitedNextDate[1] + "/" + splitedNextDate[0];
+
+console.log("kjhkjhj");
 
         const end = new Date().getTime();
         const difference = end - start;
