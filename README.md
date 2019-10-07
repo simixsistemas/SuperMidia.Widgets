@@ -16,6 +16,7 @@ Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.v
 |[Redes sociais](Posts)            |[v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Posts_V1.0.smxwid)       |![Screenshot](Posts/preview.png)                 |
 |[Frase do dia](Quotes)            |[v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Quotes_V1.0.smxwid)      |![Screenshot](Quotes/preview.png)                |
 |[Timer Pão](TimerPao)            |[v2.4](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/TimerPaoV2.4.smxwid)      |![Screenshot](TimerPao/preview.png)                |
+|[Quina](Quina)            |[v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/QuinaV1.0.smxwid)      |![Screenshot](Loteria/Quina/preview.png)                |
 
 ## Bibliotecas
 
