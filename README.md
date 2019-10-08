@@ -11,8 +11,8 @@ Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.v
 
 | Nome                                    | Download                                                                                                       |Preview                                        |
 |:---------------------------------------:|:--------------------------------------------------------------------------------------------------------------:|:---------------------------------------------:|
-|[Mega-Sena](MegaSena)                    | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/MegaSena_V1.0.smxwid)                  |![Screenshot](MegaSena/preview.png)            |
-|[Lotofácil](LotoFacil)                   | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Lotofacil_V1.0.smxwid)                 |![Screenshot](LotoFacil/preview.png)           |
+|[Mega-Sena](MegaSena)                    | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/MegaSena_V1.0.smxwid)                  |![Screenshot](Loteria/MegaSena/preview.png)    |
+|[Lotofácil](LotoFacil)                   | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Lotofacil_V1.0.smxwid)                 |![Screenshot](Loteria/LotoFacil/preview.png)   |
 |[Timemania](Loteria/Timemania)           | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Timemania_V1.0.smxwid)                 |![Screenshot](Loteria/Timemania/preview.png)   |
 |[Quina](Loteria/Quina)                   | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Quina_V1.0.smxwid)                     |![Screenshot](Loteria/Quina/preview.png)       |
 |[Lotomania](Loteria/Lotomania)           | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Lotomania_V1.0.smxwid)                 |![Screenshot](Loteria/Lotomania/preview.png)   |
