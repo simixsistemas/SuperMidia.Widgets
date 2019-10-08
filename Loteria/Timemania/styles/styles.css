@@ -4582,7 +4582,7 @@ DIV.dijitTabDisabled, .dj_ie DIV.dijitTabDisabled {
 
 .contentInlineEditBar .container {
     background-color: #f4f4f4;
-    background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#eaeaea));
+    background: webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#eaeaea));
     background: -moz-linear-gradient(top, #f4f4f4, #eaeaea);
     background: -o-linear-gradient(top, #f4f4f4, #eaeaea);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F4F4F4', endColorstr='#EAEAEA');
@@ -11957,7 +11957,7 @@ body.sociais .search-input {
 }
 
 .section-index {
-    background: #6f7179;
+    background: #f3f4f7;
     padding-top: 10px
 }
 
@@ -12506,11 +12506,11 @@ body.sociais .search-input {
 }
 
     .resultado-loteria > .numbers > li {
-        margin: 0 35px 0 0;
+        margin: 0 1px 0 0;
         font-family: "FuturaWeb",sans-serif;
         font-size: 4vw;
-        color: #fff;
-        background: #283593;
+        color: #049645;
+        background: #FFF600;
         border-radius: 4.5vw;
         width: 9vw;
         height: 9vw;
@@ -12643,7 +12643,7 @@ table.resultado-table tr:last-child {
 .resultado-loteria > .next-prize > p {
     font-size: .9rem;
     color: #4c556c;
-    margin: 5px 0
+    margin: 30px 0
 }
 
     .resultado-loteria > .next-prize > p.value {
@@ -15508,6 +15508,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 }
 
 .results-container {
@@ -15551,8 +15552,8 @@ body {
 
 #loader {
     position: fixed;
+    top:0px;
     z-index: 10000;
-    top: 0px;
     background-size: cover;
     background-image: url(../img/bg_destaqueInternas.jpg);
     width: 100vw;
@@ -15578,9 +15579,21 @@ body {
 }
 
 .loto-logo {
-    background-image: url(../img/quina.png);
-    background-size: 35vw;
+    background-image: url(../img/Timemania.png);
+    background-size: 45vw;
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
+}
+
+.heart {
+    background-image: url(../img/coração.png);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-size: 20px;
+    }
+
+.time{
+    margin-left: 25px;
+    color: #fff;
 }

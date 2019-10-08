@@ -12,7 +12,7 @@
 function startAjax() {
     var start = new Date().getTime();
     $.ajax({
-        url: "https://www.lotodicas.com.br/api/quina",
+        url: "https://www.lotodicas.com.br/api/dia-de-sorte",
         type: 'GET',
         cache: false,
         dataType: "json",
@@ -30,11 +30,14 @@ function startAjax() {
         const nextValEl = document.getElementById('nextValue');
         const idDateEl = document.getElementById('idDate');
         const hasNextEl = document.getElementById('hasNext');
+        const mesEl = document.getElementById('mes-sorte');
+    
 
         for (var i = 0; i < data.sorteio.length; i++) {
             dezEl.innerHTML += "<li>" + data.sorteio[i] + "</li>";
         }
 
+        mesEl.innerText = data.mes;
         suggNextValEl.innerText = "R$ " + formatMoney(data.proximo_estimativa);
         nextValEl.innerText = "R$ " + formatMoney(data.valor_acumulado);
         idDateEl.innerText = "Concurso " + data.numero + " (" + splitedDate[2] + "/" + splitedDate[1] + "/" + splitedDate[0] + ")";
