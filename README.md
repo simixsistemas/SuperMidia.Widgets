@@ -9,18 +9,18 @@ Diretório de armazenamento: [Arquivos](http://az01.simix.com.br:81/Arquivos/) (
 
 Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.visualstudio.com/).
 
-| Nome                             | Download                                                                                        | Preview                                         |
-|:--------------------------------:|:-----------------------------------------------------------------------------------------------:|:-----------------------------------------------:|
-|[Timemania](Loteria/timemania)     |[v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/timemania_V1.0.smxwid)    |![Screenshot](Loteria/timemania/preview.png)    |
-|[Quina](Loteria/quina)     |[v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/quina_V1.0.smxwid)    |![Screenshot](Loteria/quina/preview.png)            |
-|[Lotomania](Loteria/lotomania)     |[v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/lotomania_V1.0.smxwid)    |![Screenshot](Loteria/lotomania/preview.png)    |
-|[Dupla Sena](Loteria/dupla-sena)     |[v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/dupla_sena_V1.0.smxwid)    |![Screenshot](Loteria/dupla-sena/preview.png)  |  
-|[Dia de Sorte](Loteria/dia-de-sorte)     |[v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/dia_de_sorte_V1.0.smxwid)    |![Screenshot](Loteria/dia-de-sorte/preview.png)
-|[Mega-Sena](Loteria/MegaSena)     |[v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/MegaSena_V1.0.smxwid)    |![Screenshot](Loteria/MegaSena/preview.png)      |
-|[Lotofácil](Loteria/LotoFacil)    |[v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Lotofacil_V1.0.smxwid)   |![Screenshot](Loteria/LotoFacil/preview.png)     |
-|[Redes sociais](Posts)            |[v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Posts_V1.0.smxwid)       |![Screenshot](Posts/preview.png)                 |
-|[Frase do dia](Quotes)            |[v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Quotes_V1.0.smxwid)      |![Screenshot](Quotes/preview.png)                |
-|[Timer Pão](TimerPao)            |[v2.4](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/TimerPaoV2.4.smxwid)      |![Screenshot](TimerPao/preview.png)             |
+| Nome                                    | Download                                                                                                       |Preview                                            |
+|:---------------------------------------:|:--------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------:|
+|[Mega-Sena](MegaSena)                    | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/MegaSena_V1.0.smxwid)                  |![Screenshot](Loteria/MegaSena/preview.png)        |
+|[Lotofácil](LotoFacil)                   | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Lotofacil_V1.0.smxwid)                 |![Screenshot](Loteria/LotoFacil/preview.png)       |
+|[Timemania](Loteria/Timemania)           | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Timemania_V1.0.smxwid)                 |![Screenshot](Loteria/Timemania/preview.png)       |
+|[Quina](Loteria/Quina)                   | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Quina_V1.0.smxwid)                     |![Screenshot](Loteria/Quina/preview.png)           |
+|[Lotomania](Loteria/Lotomania)           | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Lotomania_V1.0.smxwid)                 |![Screenshot](Loteria/Lotomania/preview.png)       |
+|[Dupla Sena](Loteria/Dupla%20Sena)         | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Dupla_sena_V1.0.smxwid)              |![Screenshot](Loteria/Dupla%20Sena/preview.png)    |  
+|[Dia de Sorte](Loteria/Dia%20de%20sorte)     | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Dia_de_sorte_V1.0.smxwid)          |![Screenshot](Loteria/Dia%20de%20sorte/preview.png)|
+|[Redes sociais](Posts)                   | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Posts_V1.0.smxwid)                     |![Screenshot](Posts/preview.png)                   |
+|[Frase do dia](Quotes)                   | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Quotes_V1.0.smxwid)                    |![Screenshot](Quotes/preview.png)                  |
+|[Timer Pão](TimerPao)                    | [v2.4](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/TimerPaoV2.4.smxwid)                   |![Screenshot](TimerPao/preview.png)                |
 
 ## Bibliotecas
 
