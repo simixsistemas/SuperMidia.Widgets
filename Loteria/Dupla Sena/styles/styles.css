@@ -6696,7 +6696,9 @@ p {
 }
 
 li {
-    margin-bottom: .5em
+    margin-bottom: .5em;
+    display: inline;
+    
 }
 
 .link-list li {
@@ -11809,7 +11811,7 @@ body.sociais .search-input {
     float: right
 }
 
-.hero-loteria .numbers {
+.numbers {
     padding: 0;
     list-style: none;
     text-align: center;
@@ -11817,7 +11819,7 @@ body.sociais .search-input {
     margin: 30px auto
 }
 
-    .hero-loteria .numbers > li {
+    .numbers > li {
         display: inline-block;
         margin: 3px;
         font-family: "FuturaWeb",sans-serif;
@@ -11875,7 +11877,7 @@ body.sociais .search-input {
         margin: 65px auto 0
     }
 
-    .hero-loteria .numbers {
+    .numbers {
         width: 100%
     }
 
@@ -11905,7 +11907,7 @@ body.sociais .search-input {
         display: inline-block
     }
 
-    .hero-loteria .numbers > li {
+   .numbers > li {
         margin: 5px 8px;
         font-size: 3rem;
         border-radius: 60px;
@@ -11914,11 +11916,11 @@ body.sociais .search-input {
         padding: 18px 0
     }
 
-        .hero-loteria .numbers > li:first-child {
+        .numbers > li:first-child {
             margin-left: 0
         }
 
-        .hero-loteria .numbers > li:last-child {
+       .numbers > li:last-child {
             margin-right: 0
         }
 
@@ -12501,11 +12503,11 @@ body.sociais .search-input {
     margin: 0
 }
 
-.resultado-loteria > .numbers {
+.numbers {
     margin-bottom: 30px
 }
 
-    .resultado-loteria > .numbers > li {
+    .numbers > li {
         margin: 0 5.6vw;
         font-family: "FuturaWeb",sans-serif;
         font-size: 3.5vw;
@@ -12524,7 +12526,7 @@ body.sociais .search-input {
     }
 
 @media screen and (max-width: 37.5em) {
-    .resultado-loteria > .numbers > li {
+    .numbers > li {
         font-size: 1.6rem;
         width: 50px;
         height: 50px;
@@ -12574,8 +12576,8 @@ body.sociais .search-input {
     background: #FFF600
 }
 
-.numbers.dupla-sena > li {
-    background: #BF194E
+.numbers.dupla-sena > div > li {
+    background: #BF194E 
 }
 
 .resultado-loteria .dupla-sena h6 {
@@ -15585,7 +15587,7 @@ body {
 }
 
 .loto-logo {
-    background-image: url(../img/Lotomania.png);
+    background-image: url(../img/duplasena.png);
     background-size: 35vw;
     background-repeat: no-repeat;
     background-position-x: right;
@@ -15594,4 +15596,25 @@ body {
 
 .epsilon {
     margin-left: 120px;
+    margin-top: 1vw;
+    margin-bottom: 0px;
 }
+
+
+li {
+    margin: 0 1vw;
+    font-family: "FuturaWeb",sans-serif;
+    font-size: 5vw;
+    color: #fff;
+    background: #BF194E;
+    border-radius: 4.5vw;
+    width: 7.5vw;
+    height: 7.5vw;
+    padding: 20px 0;
+    text-align: center;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    }

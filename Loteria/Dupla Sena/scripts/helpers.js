@@ -32,8 +32,14 @@ function startAjax() {
         const hasNextEl = document.getElementById('hasNext');
 
         for (var i = 0; i < data.sorteio.length; i++) {
-            dezEl.innerHTML += "<li>" + data.sorteio[i] + "</li>";
-        }
+            var sorteioEl = "<span style='float: left; margin-left: 20vw; font-size: 20px; margin-top: 2vw;'>" +(i+1)+ "º sorteio  </span><div class='center-childs' style='float: left; width: 100%;'>"; 
+            for (var a = 0; a < data.sorteio[i].length; a++) {
+
+            sorteioEl += "<li>" + data.sorteio[i][a] + "</li>";
+            }
+            sorteioEl += "</div>";
+            dezEl.innerHTML += sorteioEl;
+        } 
 
         suggNextValEl.innerText = "R$ " + formatMoney(data.proximo_estimativa);
         nextValEl.innerText = "R$ " + formatMoney(data.valor_acumulado);

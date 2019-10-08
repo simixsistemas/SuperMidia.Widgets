@@ -30,18 +30,19 @@ function startAjax() {
         const nextValEl = document.getElementById('nextValue');
         const idDateEl = document.getElementById('idDate');
         const hasNextEl = document.getElementById('hasNext');
-
+        const TimeNomeEl = document.getElementById('time-nome');
+       
         for (var i = 0; i < data.sorteio.length; i++) {
             dezEl.innerHTML += "<li>" + data.sorteio[i] + "</li>";
         }
-
+        TimeNomeEl.innerText = data.time;
         suggNextValEl.innerText = "R$ " + formatMoney(data.proximo_estimativa);
         nextValEl.innerText = "R$ " + formatMoney(data.valor_acumulado);
         idDateEl.innerText = "Concurso " + data.numero + " (" + splitedDate[2] + "/" + splitedDate[1] + "/" + splitedDate[0] + ")";
         hasNextEl.innerText = data.acumulado === "sim" ? "Acumulou!" : "";
         suggNextDateEl.innerText = "Estimativa de prêmio do próximo concurso " + splitedNextDate[2] + "/" + splitedNextDate[1] + "/" + splitedNextDate[0];
 
-console.log("kjhkjhj");
+
 
         const end = new Date().getTime();
         const difference = end - start;

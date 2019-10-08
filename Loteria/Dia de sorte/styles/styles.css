@@ -12725,7 +12725,7 @@ table.resultado-table tr:last-child {
 
 .next-prize {
     float: left;
-    margin: 0 8vw;
+    margin: 0 5.5vw;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -15590,4 +15590,15 @@ body {
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
+}
+
+.sorte {
+    font-size: 14px;
+    color: #d3d3d3; 
+    float: right;
+    margin-right: 80vw;
+    font-size: 14px;
+    margin-top: 0vw;
+    margin-bottom: 15px;
+    margin-left: 70px; 
 }

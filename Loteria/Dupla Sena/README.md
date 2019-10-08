@@ -1,3 +1,3 @@
-# Widget Lotofácil
+# Widget Lotofï¿½cil
 
-- Widget destinado a mostrar resultados do concurso de loteria Lotofácil;
+- Widget destinado a mostrar resultados do concurso de loteria Dupla Sena;
