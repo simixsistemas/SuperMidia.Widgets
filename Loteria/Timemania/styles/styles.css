@@ -12627,7 +12627,6 @@ body.sociais .search-input {
     }
 
 .icon-heart {
-    background: url(/wps/contenthandler/!ut/p/digest!uIZ73NkcnEbqYuA2ytc-bg/war/InstitucionalTema/themes/static/images/institucional/produtos/timemania/icone-time-coracao.png) no-repeat left;
     margin: 10px 0 20px !important;
     padding: 10px 0 10px 43px
 }
@@ -15554,6 +15553,7 @@ body {
     position: fixed;
     top:0px;
     z-index: 10000;
+    background-color: #0065b7;
     background-size: cover;
     background-image: url(../img/bg_destaqueInternas.jpg);
     width: 100vw;
@@ -15587,10 +15587,10 @@ body {
 }
 
 .heart {
-    background-image: url(../img/coração.png);
+    background-image: url(../img/coracao.png);
     background-repeat: no-repeat;
     background-position-x: left;
-    background-size: 20px;
+    background-size: 2rem;
     }
 
 .time{

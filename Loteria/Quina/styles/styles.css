@@ -15553,6 +15553,7 @@ body {
     position: fixed;
     z-index: 10000;
     top: 0px;
+    background-color: #0065b7;
     background-size: cover;
     background-image: url(../img/bg_destaqueInternas.jpg);
     width: 100vw;
