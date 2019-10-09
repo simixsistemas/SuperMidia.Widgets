@@ -15558,6 +15558,7 @@ body {
 
 #loader {
     position: fixed;
+    background-color: #0065b7;
     z-index: 10000;
     background-size: cover;
     background-image: url(../img/bg_destaqueInternas.jpg);
