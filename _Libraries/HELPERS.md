@@ -86,3 +86,24 @@ Utilização :
 		"Junção de nomes: {name} {lastName}".format(name: "Felipe", lastName: "Baltazar");
 		//resultado: Junção de nomes: Felipe Baltazar
 ```
+
+
+## Imagem de itens (model-image=true)
+
+- Define que um elemento html "img" vai utilizar a imagem de um modelo (widgets)
+
+Utilização :
+
+``` html
+
+<img model-image="true" />
+
+```
+
+ou
+
+``` html
+
+<img model-image="true" onerror='fazAlgumaCoisa()' />
+
+```

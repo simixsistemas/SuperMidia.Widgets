@@ -1,3 +1,25 @@
+document.addEventListener("DOMContentLoaded", function (event) {
+    //Aqui busca o elemento html de imagem com atributo "model-image = true"
+    const imageEL = document.querySelector("img[model-image='true']")
+
+    //Se não existir o model e o elemento da imagem retorna
+    if (!imageEL || !Model) return;
+
+    //Busca a imagem do Model atual
+    imageEL.src = Model.Imagem;
+
+    //Se já possuir evento de "erro" retorna
+    if (!imageEL.onerror) return;
+
+    //Configura o evento de erro padrão, para esconder a imagem
+    imageEL.onerror = function () {
+        imageEL.style.visibility = "hidden";
+    };
+
+    //Define o padrão de visibilidade
+    imageEL.visibility = "visible";
+});
+
 String.prototype.format = String.prototype.format ||
 function () {
     "use strict";

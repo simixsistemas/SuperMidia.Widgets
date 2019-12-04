@@ -16,8 +16,8 @@ Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.v
 |[Timemania](Loteria/Timemania)           | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Timemania_V1.0.smxwid)                 |![Screenshot](Loteria/Timemania/preview.png)       |
 |[Quina](Loteria/Quina)                   | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Quina_V1.0.smxwid)                     |![Screenshot](Loteria/Quina/preview.png)           |
 |[Lotomania](Loteria/Lotomania)           | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Lotomania_V1.0.smxwid)                 |![Screenshot](Loteria/Lotomania/preview.png)       |
-|[Dupla Sena](Loteria/Dupla%20Sena)         | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Dupla_sena_V1.0.smxwid)              |![Screenshot](Loteria/Dupla%20Sena/preview.png)    |  
-|[Dia de Sorte](Loteria/Dia%20de%20sorte)     | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Dia_de_sorte_V1.0.smxwid)          |![Screenshot](Loteria/Dia%20de%20sorte/preview.png)|
+|[Dupla Sena](Loteria/Dupla%20Sena)       | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Dupla_sena_V1.0.smxwid)                |![Screenshot](Loteria/Dupla%20Sena/preview.png)    |  
+|[Dia de Sorte](Loteria/Dia%20de%20sorte) | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Dia_de_sorte_V1.0.smxwid)              |![Screenshot](Loteria/Dia%20de%20sorte/preview.png)|
 |[Redes sociais](Posts)                   | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Posts_V1.0.smxwid)                     |![Screenshot](Posts/preview.png)                   |
 |[Frase do dia](Quotes)                   | [v1.0](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/Quotes_V1.0.smxwid)                    |![Screenshot](Quotes/preview.png)                  |
 |[Timer Pão](TimerPao)                    | [v2.4](http://az01.simix.com.br:81/Arquivos/Arquivos/SuperMidia/Widgets/TimerPaoV2.4.smxwid)                   |![Screenshot](TimerPao/preview.png)                |
@@ -39,12 +39,6 @@ Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.v
 
 ## Entidades disponíveis
 
-### Post (Rede social)
-- Title
-- Text
-- Message
-- Image
-- Attachments (Coleção de anexos, podendo ser Imagem, Vídeo, Localização...)
 
 ### Message (TBR)
 - Title
@@ -52,22 +46,29 @@ Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.v
 - Image
 
 ### Item (TBR)
-- Title
-- Text
-- Image
-- Price
+- Nome
+- Imagem
+- Preco
 
 ## Objetos disponíveis
-- Model
-- View
-- Utils (TBR)
+- Model       | Objeto utilizado pela supermídia, selecionado no servidor entre (Mensagem, Item e etc..)
+- CurrentPass | Senha atual no dispositivo, utilizado normalmente nas chamadas de senhas
+- Parameters  | Parametros à serem enviados via comando, ex: TimerPão para enviar quantos segundos
+- Barcode     | Código de barras lido
+
+### Post (Rede social)
+- Title
+- Text
+- Message
+- Image
+- Attachments (Coleção de anexos, podendo ser Imagem, Vídeo, Localização...)
 
 ## Utilização das propriedades no HTML
 - Pela sintaxe {{Propriedade}}
 - Através do objeto Model por JS
 
 ## Formatação do conteúdo (TBR)
-- {{Propriedade:Formato}}
+- {{Propriedade:Formato}} ex: {{preco:n2}} = 10,00
   
 # Primeiros passos
 
