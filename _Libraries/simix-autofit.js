@@ -43,7 +43,6 @@ $(document).ready(function() {
 	});
 	
 	$("[fit-text='true']").sizeChanged(function(){
-		debugger;
 		startAutoFit();
 	});
 	
@@ -52,7 +51,6 @@ $(document).ready(function() {
 
 function startAutoFit() {
   $("[fit-text='true']").each(function (index, value) {
-	  debugger;
 	if(isNullOrEmpty(value.innerText)) return;
 		  
     let attSettings = {
@@ -219,7 +217,6 @@ function startAutoFit() {
     while (low <= high) {
       mid = (high + low) >> 1;
       innerSpan.style.fontSize = mid + 'px';
-      debugger;
       if(innerSpan.scrollWidth <= originalWidth &&
          (settings.widthOnly || innerSpan.scrollHeight <= originalHeight)){
         size = mid;
