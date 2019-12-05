@@ -41,9 +41,9 @@ Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.v
 
 
 ### Message (TBR)
-- Title
-- Text
-- Image
+- Titulo
+- Texto
+- Imagem
 
 ### Item (TBR)
 - Nome
@@ -55,6 +55,7 @@ Crie um novo partir do nosso [Template](Template) com o [VS Code](https://code.v
 - CurrentPass | Senha atual no dispositivo, utilizado normalmente nas chamadas de senhas
 - Parameters  | Parametros à serem enviados via comando, ex: TimerPão para enviar quantos segundos
 - Barcode     | Código de barras lido
+- OfferModel  | Modelo de ofertas, quando disponível em um item
 
 ### Post (Rede social)
 - Title
