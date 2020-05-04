@@ -12,7 +12,7 @@
 function startAjax() {
     var start = new Date().getTime();
     $.ajax({
-        url: "https://www.lotodicas.com.br/api/dupla-sena",
+        url: "https://api-loterias.azurewebsites.net/game/dupla_sena",
         type: 'GET',
         cache: false,
         dataType: "json",
@@ -21,9 +21,9 @@ function startAjax() {
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3",
             "Accept-Language": "pt-BR,pt;q=0.9,es;q=0.8,en;q=0.7,es-ES;q=0.6,en-US;q=0.5",
         }
-    }).done(function (data, message) {
-        const splitedDate = String(data.data).split('-');
-        const splitedNextDate = String(data.proximo_data).split('-');
+    }).done(function (response, message) {
+        const splitedDate = String(response.data.draw_date).split('-');
+        const splitedNextDate = String(response.data.next_draw_date).split('-');
         const dezEl = document.getElementById('ulDezenas');
         const suggNextValEl = document.getElementById('suggNextValue');
         const suggNextDateEl = document.getElementById('suggNextDate');
@@ -31,21 +31,27 @@ function startAjax() {
         const idDateEl = document.getElementById('idDate');
         const hasNextEl = document.getElementById('hasNext');
 
-        for (var i = 0; i < data.sorteio.length; i++) {
-            var sorteioEl = "<span style='float: left; margin-left: 20vw; font-size: 20px; margin-top: 2vw;'>" +(i+1)+ "º sorteio  </span><div class='center-childs' style='float: left; width: 100%;'>"; 
-            for (var a = 0; a < data.sorteio[i].length; a++) {
+        var i = 1
+        var sorteioEl = "<span style='float: left; margin-left: 20vw; font-size: 20px; margin-top: 2vw;'>" +(1)+ "º sorteio  </span><div class='center-childs' style='float: left; width: 100%;'>"; 
+        for (var a = 0; a < response.data.drawing.first_draw.length; a++) {
+            sorteioEl += "<li>" + response.data.drawing.first_draw[a] + "</li>";
+        }
+        sorteioEl += "</div>";
+        dezEl.innerHTML += sorteioEl;
 
-            sorteioEl += "<li>" + data.sorteio[i][a] + "</li>";
-            }
-            sorteioEl += "</div>";
-            dezEl.innerHTML += sorteioEl;
-        } 
+        var sorteioEl = "<span style='float: left; margin-left: 20vw; font-size: 20px; margin-top: 2vw;'>" +(2)+ "º sorteio  </span><div class='center-childs' style='float: left; width: 100%;'>"; 
+        for (var a = 0; a < response.data.drawing.second_draw.length; a++) {
+            sorteioEl += "<li>" + response.data.drawing.second_draw[a] + "</li>";
+        }
 
-        suggNextValEl.innerText = "R$ " + formatMoney(data.proximo_estimativa);
-        nextValEl.innerText = "R$ " + formatMoney(data.valor_acumulado);
-        idDateEl.innerText = "Concurso " + data.numero + " (" + splitedDate[2] + "/" + splitedDate[1] + "/" + splitedDate[0] + ")";
-        hasNextEl.innerText = data.acumulado === "sim" ? "Acumulou!" : "";
-        suggNextDateEl.innerText = "Estimativa de prêmio do próximo concurso " + splitedNextDate[2] + "/" + splitedNextDate[1] + "/" + splitedNextDate[0];
+        sorteioEl += "</div>";
+        dezEl.innerHTML += sorteioEl;
+
+        suggNextValEl.innerText = "R$ " + formatMoney(response.data.next_draw_prize);
+        nextValEl.innerText = "R$ " + formatMoney(response.data.next_draw_prize);
+        idDateEl.innerText = "Concurso " + response.data.draw_number + " (" + splitedDate[2].substr(0,2) + "/" + splitedDate[1] + "/" + splitedDate[0] + ")";
+        hasNextEl.innerText = response.data.has_winner === false ? "Acumulou!" : "";
+        suggNextDateEl.innerText = "Estimativa de prêmio do próximo concurso " + splitedNextDate[2].substr(0,2) + "/" + splitedNextDate[1] + "/" + splitedNextDate[0];
 
         const end = new Date().getTime();
         const difference = end - start;
