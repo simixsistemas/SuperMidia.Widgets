@@ -1,0 +1,9 @@
+body {
+    background: url("/img/background.png") center;
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+}
+
+.verticalAlign {
+    vertical-align: middle !important;
+}
