@@ -1,3 +1,7 @@
+﻿$('#title').text(config.Title.toLocaleString("pt-BR"))
+$('#title').css("color", config.TitleColor)
+$("body").css("background", config.BaseColor);
+
 $("#formSearch").submit(function (e) {
     e.preventDefault();
     const cpf = $("#inputSearch").val();
@@ -17,8 +21,8 @@ function CpfSearch(cpf) {
         type: 'GET',
         timeout: 0,
         headers: {
-            "X-AdminUser-Email": "viezzer@valedesconto.com",
-            "X-AdminUser-Token": "hncDxhCnaJyUhzxbvi54"
+            "X-AdminUser-Email": config.Email,
+            "X-AdminUser-Token": config.Token
         },
         success: function (data) {
             CreateTable(data);
@@ -38,17 +42,17 @@ function AppendCountCoupons(item) {
     }
     else {
         $('<tr>').append(
-            $('<td colspan="2">').text('N�o existem registros'),
+            $('<td colspan="2">').text('Não existem registros'),
         ).appendTo('#resultTable')
     }
 }
 
 function AppendRaffleCoupons(item) {
     $('<tr>').append(
-        $('<td colspan="2" class="h3">').html('Cupom: <span class="badge badge-info">' + item.name + '</span>')
+        $('<td colspan="2" class="h3">').html('Sorteio: <span class="badge badge-info">' + item.name + '</span>')
     ).appendTo('#resultTable');
     $('<tr>').append(
-        $('<td class="h5">').text("Sorteado"),
+        $('<td class="h5">').text("Cupom"),
         $('<td class="h5">').text("Data"),
     ).appendTo('#resultTable');
 }
